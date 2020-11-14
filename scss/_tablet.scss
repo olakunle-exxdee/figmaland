@@ -1,0 +1,307 @@
+@include tablet1 {
+  .hero {
+    .container-hero {
+      .content {
+        .heading {
+          font-size: 4rem;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        .text {
+          font-family: GraphikLight;
+          line-height: 1.2;
+          margin: 3rem 0;
+        }
+      }
+    }
+  }
+
+  .features {
+    .heading-group {
+      margin-bottom: 8rem;
+    }
+    .container-features {
+      display: flex;
+      align-items: center;
+      .content-img + .content {
+        margin-left: 4rem;
+      }
+      .content-img {
+        position: relative;
+        .img {
+          position: absolute;
+          width: 80%;
+          left: 40px;
+          bottom: -50px;
+        }
+      }
+    }
+  }
+
+  .contents {
+    background: var(--color-page-background);
+    .container-contents {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      .content-wrapper + .content-wrapper {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .partners {
+    .container-partners {
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 50px;
+          margin: 0 auto;
+        }
+        .content-img + .content-img {
+          margin-left: 4rem;
+        }
+        .content-img {
+          img + img {
+            margin-left: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .testimony {
+    .container-testimony {
+      .content {
+        .wrapper {
+          flex-direction: row;
+          .Testimonial {
+            border: 1px #ddd solid;
+            padding: 2rem;
+            max-width: 300px;
+            margin: 0 0 2rem 2rem;
+            .text {
+              margin-top: 2rem;
+              font-family: GraphikLight;
+            }
+            .Testimonial-heading {
+              font-family: GraphikMedium;
+              img {
+                width: 30px;
+              }
+              display: flex;
+              align-items: center;
+              img + div {
+                margin-left: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .variable {
+    background: var(--color-page-background);
+    .container-variable {
+      background: #343434;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      .content {
+        margin-bottom: 0;
+        padding: 2rem;
+        h1 {
+          font-size: 3rem;
+          text-align: left;
+          margin-bottom: 2rem;
+        }
+        .a {
+          display: block;
+          justify-content: start;
+          align-items: center;
+        }
+        .btn {
+          text-align: center;
+          display: inline-block;
+          margin: 0 auto;
+          color: var(--color-text);
+          font-family: "GraphikRegular";
+          padding: 1rem 2rem;
+          text-align: center;
+          background: var(--btn);
+          border: var(--btn) 1px solid;
+          transition: all 300ms ease;
+          &:hover {
+            background: transparent;
+            border: var(--color-text) 1px solid;
+          }
+        }
+      }
+      .content-img {
+        img {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 4em 0 2em 0;
+    background: var(--color-page-background);
+
+    .wrapper {
+      .content {
+        display: flex;
+        align-items: center;
+        .group + .group {
+          margin-left: 10rem;
+        }
+      }
+      .content2 {
+        .location {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+          i + p {
+            margin-left: 0.5rem;
+          }
+        }
+        .socialmedia {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 120em;
+    padding: 0 2em;
+    margin: 0 auto;
+    .toggle {
+      .logo {
+        width: 200px;
+      }
+    }
+
+    .log {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      flex-basis: 10%;
+      .login {
+        color: var(--color-text);
+        font-family: "GraphikRegular";
+        text-transform: capitalize;
+        border: var(--color-text) 1px solid;
+        padding: 0.75rem 1.5rem;
+        background: transparent;
+        text-align: center;
+        font-size: 1.7rem;
+        transition: all 300ms ease;
+        &:hover {
+          background: var(--btn);
+          border: var(--btn) 1px solid;
+        }
+      }
+
+      .hamburger {
+        display: none;
+      }
+    }
+
+    .navbar {
+      position: relative;
+      background: var(--linear);
+      top: 0;
+      width: 100%;
+      min-height: 0vh;
+      transform: translateY(0%);
+      transform: translateX(0%);
+      transition: transform 300ms ease-in;
+      flex-basis: 100%;
+
+      .link {
+        color: var(--color-text);
+        font-family: "GraphikRegular";
+        text-transform: capitalize;
+        transition: color 300ms ease-in;
+        text-align: center;
+        font-size: 1.7rem;
+        &:hover {
+          color: var(--btn);
+        }
+      }
+
+      .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      .item {
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  .hero {
+    .container-hero {
+      .content {
+        .heading {
+          font-size: 5rem;
+          max-width: 500px;
+          margin: 0 auto;
+          font-family: GraphikMedium;
+        }
+        .text {
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+  .features {
+    .container-features {
+      display: flex;
+      align-items: flex-start;
+      .content-img {
+        position: relative;
+        .img {
+          position: absolute;
+          width: 80%;
+          left: 200px;
+          bottom: -50px;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 4em 0 2em 0;
+    background: var(--color-page-background);
+
+    .wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      .content + .content2 {
+        margin-left: 4rem;
+      }
+    }
+  }
+}

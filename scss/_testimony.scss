@@ -1,0 +1,76 @@
+.testimony {
+  background: var(--color-page-background);
+  .container-testimony {
+    .content {
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .Testimonial {
+          border: 1px #ddd solid;
+          padding: 2rem;
+          max-width: 400px;
+          margin-bottom: 2rem;
+          border-radius: 5px;
+          .text {
+            margin-top: 2rem;
+            font-family: GraphikLight;
+          }
+          .Testimonial-heading {
+            font-family: GraphikMedium;
+            img {
+              width: 30px;
+            }
+            display: flex;
+            align-items: center;
+            img + div {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.variable {
+  background: #1e1e1e;
+  .container-variable {
+    .content {
+      margin-bottom: 4rem;
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        color: var(--color-text);
+        font-family: "GraphikRegular";
+        padding: 1rem 2rem;
+        text-align: center;
+        background: var(--btn);
+        border: var(--btn) 1px solid;
+        transition: all 300ms ease;
+        &:hover {
+          background: transparent;
+          border: var(--color-text) 1px solid;
+        }
+      }
+    }
+    .content-img {
+      img {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

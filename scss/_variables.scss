@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "GraphikLight";
+  src: url(../graphik/GraphikLight.otf);
+}
+
+@font-face {
+  font-family: "GraphikMedium";
+  src: url(../graphik/GraphikMedium.otf);
+}
+@font-face {
+  font-family: "GraphikRegular";
+  src: url(../graphik/GraphikRegular.otf);
+}
+
+$color-dark: rgb(0, 0, 0);
+$color-gray-dark: rgb(24, 24, 24);
+$color-btn-dark: rgb(68, 82, 254);
+$color-shade-dark: rgb(52, 52, 52);
+$color-blue: rgb(26, 26, 46);
+$color-gray-blue: rgb(26, 26, 46);
+$color-btn-blue: rgb(233, 69, 96);
+$color-shade-blue: rgb(15, 52, 96);
+$white: hsl(0, 0%, 100%);
+
+:root {
+  --color-page-background: #{$color-gray-dark};
+  --color-text: #{$white};
+  --linear: #{$color-dark};
+  --btn: #{$color-btn-dark};
+  --shade: #{$color-shade-dark};
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.dark {
+  --color-page-background: #{$color-blue};
+  --color-text: #{$white};
+  --linear: #{$color-blue};
+  --btn: #{$color-btn-blue};
+  --shade: #{$color-shade-blue};
+}
+
+body {
+  background: black;
+  font-family: GraphikRegular;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  //   line-height: 1.2;
+  // }
+}
+
+.container {
+  width: 100%;
+  max-width: 120em;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+section {
+  padding: 4em 0;
+}
+.heading-group {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-family: GraphikLight;
+    line-height: 1.5;
+  }
+}
+
+@mixin tablet1 {
+  @media only screen and (min-width: 35em) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 50em) {
+    @content;
+  }
+}

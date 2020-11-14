@@ -1,0 +1,48 @@
+.features {
+  background: var(--color-page-background);
+  p {
+    font-family: GraphikLight;
+    line-height: 1.5;
+  }
+
+  .container-features {
+    .content-img {
+      position: relative;
+      img {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .img {
+        position: absolute;
+        width: 80%;
+        left: 20px;
+        bottom: -50px;
+      }
+    }
+    .content {
+      margin-top: 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 20px;
+      }
+
+      .sub-content {
+        margin-bottom: 4rem;
+        .sub-heading {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 2rem;
+          img + p {
+            margin-left: 1rem;
+          }
+          p {
+            font-family: GraphikMedium;
+          }
+        }
+      }
+    }
+  }
+}

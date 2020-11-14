@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 150ms ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+}
+
+li {
+  list-style: none;
+}
+img:not(.logo) {
+  display: block;
+  width: 100%;
+}
