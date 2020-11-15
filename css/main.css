@@ -117,6 +117,7 @@ header .toggle {
 
 header .toggle .logo {
   width: 100px;
+  z-index: 1001;
 }
 
 header .log {
@@ -156,6 +157,7 @@ header .log .hamburger {
           transform: rotate(180deg) translateY(30%);
   margin-right: 1rem;
   margin-left: 2rem;
+  z-index: 1001;
 }
 
 header .log .hamburger .menu {
@@ -187,6 +189,7 @@ header .navbar {
           transform: translateX(100%);
   -webkit-transition: translate 400ms ease-in;
   transition: translate 400ms ease-in;
+  z-index: 1000;
 }
 
 header .navbar.open {

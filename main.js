@@ -26,7 +26,8 @@ scrl.reveal(".login", { delay: 400 });
 
 scrl.reveal(".heading", {});
 scrl.reveal(".text", { delay: 200 });
-scrl.reveal(".btn", { delay: 400 });
-scrl.reveal(".sub-content", { delay: 500 });
-scrl.reveal(".heading-group", { delay: 600 });
-scrl.reveal(".content-img", { interval: 200 });
+scrl.reveal(".btn", { delay: 200 });
+scrl.reveal(".sub-content", { delay: 400 });
+scrl.reveal(".heading-group", { delay: 500 });
+scrl.reveal(".content-img", { delay: 500 });
+scrl.reveal(".content-wrapper", { delay: 300 });

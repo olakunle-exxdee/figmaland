@@ -9,6 +9,7 @@ header {
     justify-content: space-around;
     .logo {
       width: 100px;
+      z-index: 1001;
     }
   }
 
@@ -37,6 +38,7 @@ header {
       transform: rotate(180deg) translateY(30%);
       margin-right: 1rem;
       margin-left: 2rem;
+      z-index: 1001;
 
       .menu {
         cursor: pointer;
@@ -46,8 +48,7 @@ header {
         background: #ffff;
         margin-bottom: 4px;
       }
-      .menu:nth-child(3) {
-      }
+
       .menu:nth-child(2) {
         width: 18px;
       }
@@ -66,6 +67,7 @@ header {
     transform: translateY(-1000%);
     transform: translateX(100%);
     transition: translate 400ms ease-in;
+    z-index: 1000;
 
     &.open {
       transform: translateY(0%);
