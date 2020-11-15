@@ -20,9 +20,7 @@ const scrl = ScrollReveal({
   reset: true,
 });
 
-scrl.reveal(".logo", {});
-scrl.reveal(".link", { delay: 200 });
-scrl.reveal(".login", { delay: 400 });
+scrl.reveal(".link", { delay: 200, easing: "ease-in" });
 
 scrl.reveal(".heading", {});
 scrl.reveal(".text", { delay: 200 });
@@ -30,4 +28,4 @@ scrl.reveal(".btn", { delay: 200 });
 scrl.reveal(".sub-content", { delay: 400 });
 scrl.reveal(".heading-group", { delay: 500 });
 scrl.reveal(".content-img", { delay: 500 });
-scrl.reveal(".content-wrapper", { delay: 300 });
+scrl.reveal(".content-wrapper", { delay: 300, easing: "ease-in" });
