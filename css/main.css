@@ -102,6 +102,13 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background: var(--color-page-background);
+  z-index: 1;
 }
 
 header .toggle {
@@ -975,7 +982,7 @@ header .navbar .item {
   }
   header .navbar {
     position: relative;
-    background: var(--linear);
+    background: var(--color-page-background);
     top: 0;
     width: 100%;
     min-height: 0vh;
