@@ -65,6 +65,10 @@ body {
   color: var(--color-text);
 }
 
+.red {
+  color: red;
+}
+
 .container {
   width: 100%;
   max-width: 120em;
@@ -102,10 +106,6 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 1rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  height: 60px;
   width: 100%;
   background: var(--linear);
   z-index: 1;
@@ -929,6 +929,9 @@ header .navbar .item {
 }
 
 @media only screen and (min-width: 50em) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     display: -webkit-box;
     display: -ms-flexbox;

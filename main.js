@@ -1,5 +1,35 @@
 const navbar = document.querySelector(".navbar");
 const hamburger = document.querySelector(".hamburger");
+const aaa = document.getElementsByTagName("a");
+
+gsap.registerPlugin(ScrollTrigger);
+
+const tl = gsap.timeline();
+
+tl.from(".hero-heading", { x: 2000, duration: 2 }).from(".hero-text", {
+  x: -1000,
+  duration: 1,
+});
+// gsap.to(".features", {
+//   // x: "400",
+//   duration: 3,
+//   scrollTrigger: {
+//     trigger: ".group22",
+//     start: " top 50%",
+//     end: "100 20%",
+//     scrub: 4,
+//     scrollActions: "restart none none none",
+//     pin: ".contents",
+//     markers: {
+//       startColor: "blue",
+//       fontSize: "2rem",
+//     },
+//   },
+// });
+
+// aaa.addEventListener("click", (e) => {
+//   e.preventDefault();
+// });
 
 let showMenu = false;
 
@@ -11,35 +41,4 @@ hamburger.addEventListener("click", () => {
     navbar.classList.remove("open");
     showMenu = false;
   }
-});
-
-window.sr = ScrollReveal();
-
-sr.reveal(".animate-left", {
-  origin: "left",
-  duration: 1000,
-  distance: "25rem",
-  delay: 300,
-});
-
-sr.reveal(".animate-right", {
-  origin: "right",
-  duration: 1000,
-  distance: "25rem",
-  delay: 300,
-});
-
-sr.reveal(".animate-top", {
-  origin: "top",
-  duration: 1000,
-  distance: "25rem",
-  delay: 300,
-  reset: true,
-});
-
-sr.reveal(".animate-bottom", {
-  origin: "top",
-  distance: "25rem",
-  duration: 1000,
-  reset: true,
 });
