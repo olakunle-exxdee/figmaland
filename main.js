@@ -6,10 +6,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
 
-tl.from(".hero-heading", { x: 2000, duration: 2 }).from(".hero-text", {
-  x: -1000,
-  duration: 1,
-});
+tl.from(".hero-heading", { x: 2000, duration: 2, ease: "expo.out" }).from(
+  ".hero-text",
+  {
+    x: -1000,
+    duration: 1,
+    ease: "expo.out",
+  }
+);
+
 // gsap.to(".features", {
 //   // x: "400",
 //   duration: 3,
