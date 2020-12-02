@@ -31,7 +31,7 @@ tl.from(".hero-heading", {
     duration: 2,
     ease: "expo.out",
   })
-  .from(".group22", { opacity: 0, x: "-10rem", duration: 2, ease: "expo.out" })
+  .from(".group22", { opacity: 0, duration: 2, ease: "expo.out" })
   .from(".features-sub", {
     opacity: 0,
     stagger: 1,
