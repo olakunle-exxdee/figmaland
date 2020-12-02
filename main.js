@@ -1,19 +1,18 @@
 const navbar = document.querySelector(".navbar");
 const hamburger = document.querySelector(".hamburger");
-const aaa = document.getElementsByTagName("a");
+const links = document.querySelectorAll(".link");
 
 gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
 
-tl.from(".hero-heading", { x: 2000, duration: 2, ease: "expo.out" }).from(
-  ".hero-text",
-  {
-    x: -1000,
-    duration: 1,
+tl.from(".hero-heading", { x: "300rem", duration: 3, ease: "expo.out" })
+  .from(".hero-text", {
+    x: "-300rem",
+    duration: 2,
     ease: "expo.out",
-  }
-);
+  })
+  .from(".button", { opacity: 0, stagger: 1, duration: 2 });
 
 // gsap.to(".features", {
 //   // x: "400",
@@ -32,10 +31,6 @@ tl.from(".hero-heading", { x: 2000, duration: 2, ease: "expo.out" }).from(
 //   },
 // });
 
-// aaa.addEventListener("click", (e) => {
-//   e.preventDefault();
-// });
-
 let showMenu = false;
 
 hamburger.addEventListener("click", () => {
@@ -46,4 +41,12 @@ hamburger.addEventListener("click", () => {
     navbar.classList.remove("open");
     showMenu = false;
   }
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    if (navbar.classList.contains("open")) {
+      navbar.classList.remove("open");
+    }
+  });
 });
